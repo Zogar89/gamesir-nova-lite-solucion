@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zogar89.github.io/gamesir-nova-lite-solucion/sitemap.xml

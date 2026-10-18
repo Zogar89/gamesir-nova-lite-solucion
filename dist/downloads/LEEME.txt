@@ -1,0 +1,110 @@
+GameSir Nova Lite / T4n Lite original - Kit del DONGLE V16
+Guía de Gabriel Garcia, 18 de octubre de 2026.
+
+SOLO RECEPTOR USB. No incluye firmware del mando.
+No usar con Nova 2 Lite, Nova Lite 2, Nova, Super Nova, T4 Pro u otros modelos.
+No usar GameSir Connect: GameSir advierte que puede inutilizar este dongle.
+
+COMPATIBILIDAD: NO MEZCLAR GENERACIONES
+En el caso documentado, el cambio de modo funcionaba por cable y fallaba
+con el dongle. La nota del firmware nuevo exigía un receptor en V16.
+Actualizarlo desde otra PC con Windows 10, ejecutando el programa como
+administrador, resolvió el problema. En la PC con Windows 11 no funcionó.
+Es la experiencia de este caso, no una incompatibilidad general demostrada.
+Las parejas probadas fueron:
+- Mando 7.000 (7000) + receptor V16: funcionaba. Solución final recomendada.
+- Mando 4.200 (4200) + receptor de fábrica sin actualizar: funcionaba.
+- Mando 7.000 + receptor de fábrica: fallaba.
+- Mando 4.200 + receptor V16: también fallaba.
+No se identificó la versión exacta del receptor de fábrica. Estos resultados
+describen este caso, no todas las combinaciones posibles.
+La nota oficial para su actualización documentada indica mando 6500 o
+superior y receptor V16. Si bajaste el mando a 4.200 y vas a usar V16,
+actualizá también el mando a 7.000/7000 desde Android. Conectalo con
+Home + A y abrí Nova Lite > Firmware Upgrade > 7.000/7000. Comprobá la
+versión al terminar antes de seguir. Si ya está en 7000, actualizá el dongle.
+
+CONTENIDO
+app_window.exe
+jl_firmware_upgrade_x64.dll
+jl_firmware_upgrade_x86.dll
+T4N_dog_V16_update.ufw
+LEEME.txt
+Tutorial_EN.png
+SHA256SUMS.txt
+
+La interfaz del actualizador está en chino. Tutorial_EN.png pertenece al
+paquete anterior V15 y muestra dónde están los botones. Para esta guía,
+seleccioná siempre T4N_dog_V16_update.ufw.
+
+PASOS EN WINDOWS
+1. Extraé todo el ZIP en una carpeta. Conservá las DLL junto al programa.
+2. Dejá el mando apagado. Cerrá otras aplicaciones GameSir.
+3. Abrí app_window.exe. En este caso fue necesario hacer clic derecho >
+   Ejecutar como administrador, en Windows 10. Prepará el programa y
+   aceptá la elevación antes de entrar al modo de actualización.
+4. Pulsá 选择文件 (Seleccionar archivo) y elegí T4N_dog_V16_update.ufw.
+5. Con el dongle desconectado, mantené su botón de emparejamiento.
+   Conectalo al USB sin soltar y esperá aproximadamente 5 segundos,
+   hasta que la luz quede apagada. Soltá entonces.
+6. Desde que entra al modo de actualización, disponés de unos 10 segundos
+   para INICIAR la escritura, según lo observado en este caso. Por eso
+   el programa debe estar abierto y el archivo seleccionado de antemano.
+   Pulsá 查询升级设备 (Buscar dispositivo). Revisá el bloque inferior:
+   el programa debe reconocer el receptor y mostrar datos del dispositivo.
+   Si sigue rojo o VID/PID están vacíos, no continúes.
+7. Pulsá 升级 (Actualizar) enseguida, dentro de esa ventana de 10 segundos.
+   El límite es para empezar, NO para terminar. No lo desconectes durante
+   la escritura: esperá 100 % y el mensaje de actualización correcta.
+8. Retirá el dongle y volvé a conectarlo.
+
+SI NO LO DETECTA
+El parpadeo rápido indica emparejamiento, no actualización. Repetí la
+secuencia; probá otro puerto USB directo o presioná el botón apenas
+lo conectás. La luz apagada por sí sola tampoco confirma detección:
+mandan el estado del programa y los datos del dispositivo inferiores.
+No uses la casilla de actualización forzada para saltear este problema.
+Si vencieron los 10 segundos sin comenzar a escribir, repetí el ingreso
+al modo de actualización, con el archivo ya preparado. Si ya empezó a
+escribir, no lo desconectes: dejá que termine.
+Probá ejecutar el programa como administrador. Si todavía no lo detecta,
+probá otra PC: en este caso funcionó Windows 10 como administrador,
+mientras que en la PC con Windows 11 no funcionó. No se determinó la causa
+exacta de esa diferencia ni se demuestra un fallo general de Windows 11.
+
+VOLVER A USARLO
+Encendé el mando con Home + X para el receptor. Si no enlaza, activá
+emparejamiento del dongle y Home + Captura en el mando hasta que parpadee
+rápido. Con el enlace establecido, mantené juntos el botón de las
+ventanitas (View, a la izquierda del botón circular central) y el de las
+tres rayitas (Menu, a la derecha) por unos 2 segundos para cambiar de modo.
+Para PC, XInput usa luz verde. Probá botones y ejes con joy.cpl.
+
+OTRO CAMINO: ANDROID
+La alternativa con el RECEPTOR ANTERIOR es volver el MANDO a 4.200/4200.
+Encendelo con Home + A, vinculalo al Android por Bluetooth y abrí GameSir.
+Entrá al Nova Lite > Firmware Upgrade > Other Version > 4.200/4200.
+No apagues el mando durante la escritura. Si 4.200 no aparece, no elijas
+firmware de otro dispositivo. No dejes el mando en 4.200 con el receptor
+ya actualizado a V16. Este kit no actualiza el mando.
+Para el mando recomendamos Android. Quien use iPhone y no tenga Android
+puede seguir el camino del dongle desde Windows. La herramienta china
+también tiene un procedimiento para el mando, pero no se recomienda en
+esta guía por su complejidad y su firmware no se distribuye acá.
+
+PROCEDENCIA
+https://doc.xiaoji.com/zh/t4nlite/detail/1192.html
+Herramienta:
+https://doc.xiaoji.com/ueditor/php/upload/file/20231208/1702035432333431.zip
+Firmware del dongle:
+https://doc.xiaoji.com/ueditor/php/upload/file/20250722/1753179134478450.rar
+FAQ:
+https://gamesir.com/pages/faq-questions-about-nova-lite
+Advertencia:
+https://gamesir.com/pages/gamesir-connect-software
+Guía completa:
+https://zogar89.github.io/gamesir-nova-lite-solucion/
+
+Binarios oficiales originales, sin modificar, descargados el 17/10/2026.
+SHA256SUMS.txt permite comprobar integridad; no acredita seguridad.
+No se ejecutó el programa ni se actualizó hardware al preparar esta guía.

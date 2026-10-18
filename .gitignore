@@ -1,0 +1,7 @@
+work/
+node_modules/
+.impeccable/review/
+*.tar.gz
+*.tar
+__pycache__/
+debug.log
